@@ -7,7 +7,7 @@
     src: url("../fonts/Montserrat-Bold.ttf");
 }
 h1,h2{
-    font-family: montserrat_bold;
+    font-family: "montserrat_bold";
     /* font-size: 5.6vw;
     line-height: 7vw; */
     font-size: calc(40px + 2vw);
@@ -22,19 +22,19 @@ h1,h2{
 }
 
 .text_number{
-    font-family: montserrat_bold;
+    font-family: "montserrat_bold";
     font-size: calc(18px + 1.2vw);
     line-height: calc(34px + 1.2vw);
 }
 
 p{
-    font-family: montserrat_regular;
+    font-family: "montserrat_regular";
     font-size: calc(14px + 0.4vw);
     line-height: calc(16px + 0.7vw);
 }
 
 h3{
-    font-family: montserrat_bold;
+    font-family: "montserrat_bold";
     font-size: calc(18px + 0.9vw);
     line-height: calc(20px + 1vw);
 }
@@ -47,9 +47,7 @@ button{
     background: linear-gradient(318.71deg, #32C9AC 5.47%, #1DA1F1 100%);
     box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.8), 4px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
+    font-family: "montserrat_bold";
     font-size: 20px;
     line-height: 24px;
     color: white;
@@ -287,6 +285,7 @@ footer{
     }
     .iphone_salas{
         max-height: 320px;
+        margin-top: 45px;
     }
     .break_order{
         order: 1;
@@ -342,14 +341,15 @@ footer{
         max-width: 13px;
     }
     .icons_space {
-        column-gap: 20px;
+        column-gap: 0px;
     }
     .responsive_size_logo {
         max-width: 90px;
     }
     .principal_section {
-        row-gap: 45px;
+        row-gap: 0px;
     }
+
     main {
         row-gap: 20px;
     }
@@ -366,6 +366,12 @@ footer{
     }
     .box_margin{
         margin-top: 16px;
+    }
+    .margin_mobile_icons{
+        margin-left: 20px;
+    }
+    .margin_mobile_icons :first-child
+        margin-left: 0px;
     }
 }
 }

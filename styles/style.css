@@ -6,6 +6,10 @@
     font-family: "montserrat_bold";
     src: url("../fonts/Montserrat-Bold.ttf");
 }
+a{
+    text-decoration: none;
+    color: none;
+}
 h1,h2{
     font-family: "montserrat_bold";
     /* font-size: 5.6vw;
@@ -221,6 +225,18 @@ main{
 .relative-section:hover p {
     color: #5E6E78;
 }
+.relative-section:hover .absolut_arrow1 {
+    display: block;
+}
+.relative-section:hover .absolut_arrow3 {
+    display: block;
+}
+.relative-section:hover .absolut_arrow2 {
+    display: none;
+}
+.relative-section:hover .absolut_arrow4 {
+    display: none;
+}
 
 #margin_wallet{
     position: relative;
@@ -234,17 +250,34 @@ button:hover{
 .cursor{
     cursor: url('../images/lemon_cursor.png'), default;
 }
-.absolut_arrow{
+.absolut_arrow1{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    
+}
+.absolut_arrow2{
     position: absolute;
     bottom: 10px;
     right: 20px;
 }
-
+.absolut_arrow3{
+    position: absolute;
+    bottom: -3px;
+    right: 20px;
+    display: none;
+}
+.absolut_arrow4{
+    position: absolute;
+    bottom: -3px;
+    right: 20px;
+}
 .center_img{
     display: flex;
     justify-content: center;
-
 }
+
 button img{
     padding-top: 1px;
 }
@@ -262,6 +295,75 @@ footer{
     align-items: center;
     flex-direction: row;
 }
+.about_us_cover{
+    background-image: url("../images/fondo_about_us.png");
+    height: 100vh;
+    background-size: cover;
+}
+.about_us_text{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    color: white;
+}
+.banner_box_about_us{
+    max-width: 944px;
+}
+#like_snack_size{
+    max-width: 203px;
+}
+#strong_box_size{
+    max-width: 249px;
+}
+#like_okey_size{
+    max-width: 311px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card_values_size{
+    max-width: 270px;
+}
+.center_text{
+    text-align: center;
+}
+.same_height{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    margin-top: 66px;
+}
+.super_banner{
+    font-family: "montserrat_bold";
+    font-size: 170px;
+    line-height: 207px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.no_te_rayes_bg{
+    background-image: url("../images/tickets_floating.png");
+    background-size: 289px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 829px;
+    height: 659px;
+}
+.no_te_rayes{
+    max-width: 476px;
+    margin-top: 194px;
+}
+#text_no_te_rayes_size{
+    max-width: 357px;
+    text-align: center;
+    margin-top: 66px;
+}
+
 @media (max-width: 983px) {
     .responsive_flip{
         order: 100;
@@ -370,10 +472,9 @@ footer{
     .margin_mobile_icons{
         margin-left: 20px;
     }
-    .margin_mobile_icons :first-child
+    .margin_mobile_icons :first-child{
         margin-left: 0px;
     }
-}
 }
 /* @keyframes colorines{
     0%{
@@ -390,3 +491,4 @@ footer{
 /*#full_screen{
     margin-right: 0px;
     margin-left: 0px; */
+}

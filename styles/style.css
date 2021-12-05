@@ -475,6 +475,21 @@ footer{
     .margin_mobile_icons :first-child{
         margin-left: 0px;
     }
+    .absolut_arrow1{
+        right: 3px;
+    }
+    .absolut_arrow2{
+        right: 3px;
+    }
+    .absolut_arrow3{
+        right: -1px;
+    }
+    .absolut_arrow4{
+        right: -1px;
+    }
+    .absolute-circle {
+        right: 10px;
+    }
 }
 /* @keyframes colorines{
     0%{
